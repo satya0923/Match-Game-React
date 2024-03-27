@@ -1,0 +1,23 @@
+.thumbnail-item {
+    list-style: none;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .thumbnail-img {
+    height: 180px;
+  }
+  
+  .thumbnail-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  @media (max-width: 576px) {
+    .thumbnail-img {
+      height: 90px;
+    }
+  }
+  

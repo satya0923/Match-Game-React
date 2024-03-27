@@ -1,38 +1,125 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
+  background-size: cover;
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+
+.content-container {
+  padding: 100px;
+}
+
+.img-url {
+  height: 580px;
+  border-radius: 10px;
+}
+
+.image-container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tab-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.thumbnail-list-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding-left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.trophy-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+  background-size: cover;
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.trophy-img {
+  height: 350px;
+  margin-top: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bg-container {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-img {
+  height: 36px;
+  padding-right: 10px;
+}
+
+.reset-btn {
+  background-color: #cf60c8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.your-score {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.score-points {
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.navbar-list {
+  padding-left: 0;
+}
+
+@media (max-width: 576px) {
+  .img-url {
+    height: 245px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .content-container {
+    padding: 20px;
+  }
+
+  .trophy-img {
+    height: 180px;
+  }
+
+  .trophy-container {
+    height: 500px;
+    width: 400px;
   }
 }
